@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
-import { Slider, RangeSlider, Row, Col, InputGroup, InputNumber } from "rsuite";
 import { IoSaveOutline } from "react-icons/io5";
 import { LuPlus } from "react-icons/lu";
-// import { useStore } from "../zustand/store";
-import { toast } from "react-hot-toast";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 const Modal = ({
   open,
@@ -47,7 +45,7 @@ const Modal = ({
   const handleClose = () => {
     setSelectedFile(null);
     setFileName("");
-    setOpen();
+    setOpen(false);
   };
 
   const positionClass = (pos) => {

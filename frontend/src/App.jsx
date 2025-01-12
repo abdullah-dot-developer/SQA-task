@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { FiUpload } from "react-icons/fi";
 import { IoTrashOutline } from "react-icons/io5";
 import Modal from "./components/Modal";
-import { useStore } from "./zustand/store";
 import axios from "axios";
 import toast from "react-hot-toast";
 
