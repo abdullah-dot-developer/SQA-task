@@ -23,7 +23,7 @@ const Modal = ({
   const saveImage = async () => {
     try {
       const { data } = await axios.post(
-        "https://sqa-task-j1zz.vercel.app/api/image/save",
+        "https://sqa-task.onrender.com/api/image/save",
         {
           image: logo,
           fileName,

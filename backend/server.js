@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json({ limit: "5mb" }));
 app.use(
   cors({
-    origin: "https://sqa-task-j1zz.vercel.app/",
+    origin: "https://sqa-task-j1zz.vercel.app",
     credentials: true,
   })
 );
