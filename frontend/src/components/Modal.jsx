@@ -64,7 +64,7 @@ const Modal = ({
   };
 
   return (
-    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%]  bg-white rounded-3xl shadow-xl px-10 pt-10 pb-[4.6rem] z-50">
+    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%]  bg-white rounded-3xl shadow-xl px-10 pt-10 pb-[4.6rem] z-50 h-full lg:h-[95%] overflow-scroll lg:overflow-auto">
       <div className="flex justify-between items-center pt-2">
         <h1 className="text-4xl font-semibold text-gray-800 opacity-90">
           Watermark
@@ -75,12 +75,12 @@ const Modal = ({
           onClick={handleClose}
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-[0.6fr,1fr,0.7fr] gap-8 h-[75%]">
+      <div className="grid grid-cols-1 lg:grid-cols-[0.6fr,1fr,0.7fr] gap-8 h-full lg:h-[75%]">
         <div className="flex flex-col items-center justify-end h-[500px] w-[300px] lg:w-full lg:h-full">
           <p className="text-3xl text-center font-[500] opacity-90 pb-5">
             Portrait
           </p>
-          <div className="p-3 h-[85%] w-full bg-cyan-50 rounded-xl relative">
+          <div className="p-3 h-[85%] w-[80%] lg:w-full bg-cyan-50 rounded-xl relative">
             <img
               src={logo}
               alt="Portrait Watermark"
@@ -91,14 +91,14 @@ const Modal = ({
             />
           </div>
         </div>
-        <div className="flex flex-col items-center justify-end h-[500px] w-[500px] lg:w-full lg:h-full">
+        <div className="flex flex-col items-center justify-end h-[500px] w-[98%] lg:w-full lg:h-full">
           <p className="text-3xl text-center font-[500] opacity-90 pb-5">
             Landscape
           </p>
-          <div className="p-3 w-full h-[55%] bg-cyan-50 rounded-xl relative">
+          <div className="p-3 w-[98%] lg:w-full h-[50%] lg:h-[55%] bg-cyan-50 rounded-xl relative">
             <img
               src={logo}
-              alt="Portrait Watermark"
+              alt="Landscape Watermark"
               className={`w-[20%] object-contain absolute ${positionClass(
                 position
               )}`}
