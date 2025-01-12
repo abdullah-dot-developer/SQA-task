@@ -15,7 +15,7 @@ const App = () => {
     const fetchLastImage = async () => {
       try {
         const { data } = await axios.get(
-          "https://sqa-task-j1zz.vercel.app/api/image/last"
+          "https://sqa-task.onrender.com/api/image/last"
         );
 
         if (data.success) {
@@ -51,7 +51,7 @@ const App = () => {
   const handleDelete = async () => {
     try {
       const res = await axios.delete(
-        `https://sqa-task-j1zz.vercel.app/api/image/delete-image/${selectedFile?.id}`
+        `https://sqa-task.onrender.com/api/image/delete-image/${selectedFile?.id}`
       );
 
       if (res?.data?.success) {
