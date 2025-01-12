@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Styling for the thumb on WebKit browsers (Chrome, Safari, Edge) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb styling */
+  appearance: none; /* Modern browsers */
+  width: 24px; /* Thumb width */
+  height: 24px; /* Thumb height */
+  background: #ffffff; /* Thumb color */
+  border: 3px solid #c5fafe; /* Thumb border */
+  border-radius: 50%; /* Round thumb */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+
+
+
+
