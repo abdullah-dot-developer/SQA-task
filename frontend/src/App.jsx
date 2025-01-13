@@ -101,7 +101,7 @@ const App = () => {
             onClick={() => fileInputRef?.current?.click()}
             disabled={fileName}
           >
-            <FiUpload />
+            {!fileName && <FiUpload />}
             <p>{fileName || "Upload Logo"}</p>
           </button>
 
